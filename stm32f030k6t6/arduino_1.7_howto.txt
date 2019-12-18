@@ -1,0 +1,25 @@
+1. Download STM32F030K6-master.zip from https://github.com/r-pv/STM32F030K6
+2. From ZIP copy DEMO_F030K6 to C:\Users\<Username>\AppData\Local\Arduino15\packages\STM32\hardware\stm32\1.7.0\variants
+3. Edit C:\Users\<Username>\AppData\Local\Arduino15\packages\STM32\hardware\stm32\1.7.0\boards.txt
+
+add 
+
+# DEMO_F030K6 board
+GenF0.menu.pnum.DEMO_F030K6=STM32F030K6 Demo board
+GenF0.menu.pnum.DEMO_F030K6.upload.maximum_data_size=4096
+GenF0.menu.pnum.DEMO_F030K6.upload.maximum_size=32768
+GenF0.menu.pnum.DEMO_F030K6.build.board=DEMO_F030K6
+GenF0.menu.pnum.DEMO_F030K6.build.product_line=STM32F030x6
+GenF0.menu.pnum.DEMO_F030K6.build.variant=DEMO_F030K6
+
+after 
+
+# DEMO_F030F4_HSI board
+GenF0.menu.pnum.DEMO_F030F4_HSI=STM32F030F4 Demo board (internal RC oscillator)
+GenF0.menu.pnum.DEMO_F030F4_HSI.upload.maximum_data_size=4096
+GenF0.menu.pnum.DEMO_F030F4_HSI.upload.maximum_size=16384
+GenF0.menu.pnum.DEMO_F030F4_HSI.build.board=DEMO_F030F4_HSI
+GenF0.menu.pnum.DEMO_F030F4_HSI.build.product_line=STM32F030x6
+GenF0.menu.pnum.DEMO_F030F4_HSI.build.variant=DEMO_F030F4
+
+4. Restart Arduino and select Tools->Board: Generic STM32F0->Board part number: STM32F030K6 Demo board
